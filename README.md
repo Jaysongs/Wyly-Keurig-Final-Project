@@ -1,4 +1,6 @@
-# Keurig-Like Website
+# Keurig Website
+
+https://in-info-web4.luddy.indianapolis.iu.edu/~jlwyly/Wyly%20Keurig/dist/
 
 This project is a web-based storefront designed to replicate the shopping experience of the Keurig website. It allows users to explore a range of coffee makers, pods, and accessories while highlighting special offers and personalized options.
 
