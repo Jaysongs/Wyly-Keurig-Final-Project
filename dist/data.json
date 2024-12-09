@@ -1,0 +1,64 @@
+{
+    "PRODUCTS": [
+        {
+            "productBanner": "2 FREE BOXES - COLDBREW25",
+            "productImage": "images/cof2.webp",
+            "product": "K-Brew® + Chill™ Coffee Maker",
+            "productPrice": "$199"
+        },
+        {
+            "productBanner": "2 FREE BOXES - BREW2FREE",
+            "productImage": "images/cof1.webp",
+            "product": "K-Duo® Hot & Iced Single Serve & Carafe Coffee Maker (Gen 2)",
+            "productPrice": "$99"
+        },
+        {
+            "productBanner": "SALE - NO CODE NEEDED",
+            "productImage": "images/cof3.webp",
+            "product": "Keurig® K-Classic® Coffee Maker",
+            "productPrice": "$74"
+        },
+        {
+            "productBanner": "2 FREE BOXES - BREW2FREE",
+            "productImage": "images/cof4.webp",
+            "product": "Keurig® K-Select® Coffee Maker",
+            "productPrice": "$79"
+        },
+        {
+            "productBanner": "45% OFF - NO CODE REQUIRED",
+            "productImage": "images/cof5.webp",
+            "product": "Keurig® K-Elite® Single Serve Coffee Maker",
+            "productPrice": "$109"
+        },
+        {
+            "productBanner": "STARTER KIT OFFER",
+            "productImage": "images/cof6.webp",
+            "product": "K-Supreme® SMART Single Serve Coffee Maker",
+            "productPrice": "$49"
+        },
+        {
+            "productBanner": "30% OFF - SMARTBREW30",
+            "productImage": "images/cof7.webp",
+            "product": "K-Supreme Plus® SMART Single Serve Coffee Maker",
+            "productPrice": "$99"
+        },
+        {
+            "productBanner": "47% OFF - NO CODE REQUIRED",
+            "productImage": "images/cof8.webp",
+            "product": "K-Duo® Single Serve & Carafe Coffee Maker",
+            "productPrice": "$94"
+        },
+        {
+            "productBanner": "2 FREE BOXES - BREW2FREE",
+            "productImage": "images/cof9.webp",
+            "product": "K-Café® SMART Single Serve Coffee Maker",
+            "productPrice": "$119"
+        },
+        {
+            "productBanner": "50% OFF WHEN YOU BUILD A KIT",
+            "productImage": "images/cof10.webp",
+            "product": "K-Café® Special Edition Single Serve Coffee Latte & Cappuccino Maker",
+            "productPrice": "$149"
+        }
+    ]
+}

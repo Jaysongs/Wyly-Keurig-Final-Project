@@ -1,0 +1,577 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+#fName, #lName, #password, #fNameFoc, #lNameFoc {
+  display: none;
+}
+
+.sign-in-content-holder .main-field {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.366);
+}
+.sign-in-content-holder .main-field .logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+.sign-in-content-holder .main-field .logo img {
+  width: 170px;
+  margin: 0;
+}
+.sign-in-content-holder .main-field .sign-in-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  color: #9D8168;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form #siEmail, .sign-in-content-holder .main-field .sign-in-content .sign-in-field .form #siPassword, .sign-in-content-holder .main-field .sign-in-content .sign-in-field .form #fName, .sign-in-content-holder .main-field .sign-in-content .sign-in-field .form #lName {
+  padding: 10px;
+  width: 300px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.404);
+  border-radius: 25px;
+  margin-top: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: visible;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form label {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: grey;
+  position: absolute;
+  left: -19%;
+  margin-top: -35px;
+  margin-bottom: 20px;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form #siSubmit {
+  background-color: #362B2F;
+  padding: 10px;
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  margin: 20px;
+  margin-top: 50px;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .focused {
+  position: relative;
+  transform: translateY(0);
+  transition: transform 0.3s ease, color 0.3s ease;
+  opacity: 1;
+  background-color: white;
+  color: gray;
+  pointer-events: none;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .focused.visible {
+  transform: translateY(-120%);
+  color: black;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .terms {
+  margin-top: 15px;
+  margin-bottom: 55px;
+  width: 90%;
+  height: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .terms span {
+  cursor: pointer;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .terms .check-box {
+  padding: 10px;
+  padding-top: 20px;
+  display: flex;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .terms .check-box .box1 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .terms .check-box .box2 {
+  width: 21px;
+  height: 21px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #362B2F;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .terms .check-box svg {
+  margin-left: 5px;
+  margin-top: -1px;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .terms .check-box p {
+  font-size: 16px;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .terms p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 12px;
+  margin-top: -10px;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field a {
+  color: black;
+}
+.sign-in-content-holder .main-field .sign-in-content img {
+  width: 275px;
+  margin-top: 75px;
+}
+.sign-in-content-holder .footer {
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-style: italic;
+}
+.sign-in-content-holder .footer span {
+  margin: 8px;
+  color: rgba(0, 0, 0, 0.558);
+}
+
+.sign-in-content-holder .main-field {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.366);
+}
+.sign-in-content-holder .main-field .logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+.sign-in-content-holder .main-field .logo img {
+  width: 170px;
+  margin: 0;
+}
+.sign-in-content-holder .main-field .sign-in-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  color: #9D8168;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form #siEmail, .sign-in-content-holder .main-field .sign-in-content .sign-in-field .form #siPassword {
+  padding: 10px;
+  width: 300px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.404);
+  border-radius: 25px;
+  margin-top: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: visible;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form label {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: grey;
+  position: absolute;
+  left: -19%;
+  margin-top: -35px;
+  margin-bottom: 20px;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form #siSubmit {
+  background-color: #362B2F;
+  padding: 10px;
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  margin: 20px;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .focused {
+  position: relative;
+  transform: translateY(0);
+  transition: transform 0.3s ease, color 0.3s ease;
+  opacity: 1;
+  background-color: white;
+  color: gray;
+  pointer-events: none;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .focused.visible {
+  transform: translateY(-120%);
+  color: black;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .terms {
+  margin-top: 15px;
+  margin-bottom: 55px;
+  width: 90%;
+  height: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .terms span {
+  cursor: pointer;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .terms .check-box {
+  padding: 10px;
+  padding-top: 20px;
+  display: flex;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .terms .check-box .box1 {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .terms .check-box .box2 {
+  width: 21px;
+  height: 21px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #362B2F;
+  color: white;
+  cursor: pointer;
+  z-index: 2;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .terms .check-box svg {
+  margin-left: 5px;
+  margin-top: -1px;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field .form .terms p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 12px;
+  margin-top: -10px;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.sign-in-content-holder .main-field .sign-in-content .sign-in-field a {
+  color: black;
+}
+.sign-in-content-holder .main-field .sign-in-content img {
+  width: 275px;
+  margin-top: 75px;
+}
+.sign-in-content-holder .footer {
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-style: italic;
+}
+.sign-in-content-holder .footer span {
+  margin: 8px;
+  color: rgba(0, 0, 0, 0.558);
+}
+
+#siPassword, #terms, #checkBox, #pfoc {
+  display: none;
+}
+
+nav {
+  height: 250px;
+  width: 100%;
+  background-color: #EBE9E4;
+  display: flex;
+  flex-direction: column;
+}
+nav .banner {
+  width: 100%;
+  height: 83px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .banner .banner-main {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .banner .banner-main img {
+  width: 180px;
+  margin-left: 30px;
+  opacity: 0.5;
+}
+nav .banner .banner-main .search-bar input {
+  width: 500px;
+  border-radius: 30px;
+  border: none;
+  height: 40px;
+  padding: 13px;
+  position: relative;
+}
+nav .banner .banner-main .search-bar label {
+  position: absolute;
+  margin-top: -45px;
+  align-items: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+nav .banner .banner-main .search-bar label img {
+  width: 50px;
+}
+nav .banner .banner-main p {
+  font-size: 14px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+nav .banner .icons {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+nav .banner .icons a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+nav .banner .icons a .count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+nav .links {
+  height: 83px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+nav .links span {
+  color: red;
+}
+nav .links span svg {
+  width: 15px;
+}
+nav .links p {
+  cursor: pointer;
+}
+nav .deals {
+  width: 100%;
+  height: 45%;
+  background-color: #403136;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+nav .deals .texta {
+  color: white;
+  font-size: 13px;
+  width: 18%;
+  text-align: center;
+}
+nav .deals .text {
+  color: white;
+  font-size: 13px;
+  width: 22%;
+  text-align: center;
+  border-left: white 1px solid;
+}
+
+.banners {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banners img {
+  width: 89%;
+  height: 200px;
+  margin-top: 20px;
+}
+.banners .drop-downs img {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.home-container .align {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.home-container .align #coffee-makers {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.home-container .align #coffee-makers .product {
+  width: 23%;
+  height: 90vh;
+  border: solid 1px black;
+  box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 1px 4px 39px -4px rgba(0, 0, 0, 0.53);
+}
+.home-container .align #coffee-makers .product .color {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+.home-container .align #coffee-makers .product .color .bubble {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+.home-container .align #coffee-makers .product .info {
+  width: 100%;
+  height: 48%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.home-container .align #coffee-makers .product .info .top {
+  width: 89%;
+  height: 100px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-bottom: 0.5px solid black;
+  margin-bottom: 10px;
+}
+.home-container .align #coffee-makers .product .info .top span {
+  display: block;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.home-container .align #coffee-makers .product .info .top .one {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 18px;
+}
+.home-container .align #coffee-makers .product .info .bottom {
+  width: 89%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.home-container .align #coffee-makers .product .info .bottom p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.home-container .align #coffee-makers .product .info .bottom p span {
+  padding: 5px;
+  border-left: 1px solid black;
+}
+.home-container .align #coffee-makers .product .info .ship {
+  width: 89%;
+  align-items: start;
+  margin-top: 30px;
+  display: flex;
+}
+.home-container .align #coffee-makers .product .info .ship p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #527BFB;
+  font-size: 12px;
+}
+.home-container .align #coffee-makers .product .info .ship .box {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+.home-container .align #coffee-makers .product .info .buy-now {
+  cursor: pointer;
+  margin-top: 50px;
+  padding: 10px 75px;
+  border: 2px solid #E0BF53;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.home-container .align #coffee-makers img {
+  margin-top: 100px;
+}
+
+.coffee-makers {
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(59, 59, 51);
+}
+.coffee-makers .display {
+  width: 180px;
+  height: 200px;
+  border: black 1px solid;
+}
+.coffee-makers .display img {
+  width: 500px;
+}
+.coffee-makers .display .color {
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.coffee-makers .display .color .bubble {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}

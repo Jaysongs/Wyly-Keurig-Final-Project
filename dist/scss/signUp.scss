@@ -1,0 +1,183 @@
+#fName, #lName, #password, #fNameFoc, #lNameFoc {
+    display: none;
+}
+
+.sign-in-content-holder {
+
+    .main-field {
+        width: 100%;
+        // height: 75vh;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.366);
+        
+        .logo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75px;
+
+            img {
+                width: 170px;
+                margin: 0;
+            }
+        }
+        .sign-in-content {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6rem;
+
+            .sign-in-field {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-weight: 100;
+                    color: #9D8168;
+                }
+
+                .form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    #siEmail, #siPassword, #fName, #lName {
+                        padding: 10px;
+                        width: 300px;
+                        height: 50px;
+                        border: 1px solid rgba(0, 0, 0, 0.404);
+                        border-radius: 25px;
+                        margin-top: 20px;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        overflow: visible;
+                    }
+
+                    label {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        color: grey;
+                        position: absolute;
+                        left: -19%;
+                        margin-top: -35px;
+                        margin-bottom: 20px;
+                    }
+                    #siSubmit {
+                        background-color: #362B2F;
+                        padding: 10px;
+                        width: 300px;
+                        height: 50px;
+                        border: none;
+                        border-radius: 25px;
+                        color: white;
+                        margin: 20px;
+                        margin-top: 50px;
+
+                    }
+                    .focused {
+                        position: relative;
+                        transform: translateY(0);
+                        transition: transform 0.3s ease, color 0.3s ease; 
+                        opacity: 1;
+                        background-color: white;
+                        color: gray; 
+                        pointer-events: none; 
+                    }
+                    
+                    .focused.visible {
+                        transform: translateY(-120%); 
+                        color: black; 
+                    }
+
+                    .terms {
+                        margin-top: 15px;
+                        margin-bottom: 55px;
+                        width: 90%;
+                        height: 40px;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        
+                        span {
+                            cursor: pointer;
+                        }
+
+                        .check-box {
+                            padding: 10px;
+                            padding-top: 20px;
+                            display: flex;
+
+                            .box1 {
+                                width: 20px;
+                                height: 20px;
+                                border: 1px solid black;
+                                border-radius: 5px;
+                                cursor: pointer;
+
+                            }
+                            .box2 {
+                                width: 21px;
+                                height: 21px;
+                                border: 1px solid black;
+                                border-radius: 5px;
+                                background-color: #362B2F;
+                                color: white;
+                                cursor: pointer;
+                                z-index: 2;
+                            }
+                            svg {
+                                margin-left: 5px;
+                                margin-top: -1px;
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+
+                        p {
+                            width: 80%;
+                            margin: 0 auto;
+                            font-size: 12px;
+                            margin-top: -10px;
+                        }
+                    }
+
+
+                }
+
+                p {
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+
+                a {
+                    color: black;
+                    
+                }
+            }
+
+            img {
+                width: 275px;
+                margin-top: 75px;
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        color: gray;
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        font-style: italic;
+
+        span {
+            margin: 8px;
+            color: rgba(0, 0, 0, 0.558);
+        }
+    }
+}

@@ -1,0 +1,274 @@
+nav {
+    height: 250px;
+    width: 100%;
+    background-color: #EBE9E4;
+    display: flex;
+    flex-direction: column;
+
+    .banner {
+        width: 100%;
+        height: 83px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .banner-main {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                width: 180px;
+                margin-left: 30px;
+                opacity: .5;
+            }
+
+            .search-bar {
+                input {
+                    width: 500px;
+                    border-radius: 30px;
+                    border: none;
+                    height: 40px;
+                    padding: 13px;
+                    position: relative;
+                }
+                label {
+                    position: absolute;
+                    margin-top: -45px;
+                    align-items: end;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+                    img {
+                        width: 50px;
+                    }
+                }
+            }
+
+            p {
+                font-size: 14px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        }
+
+        .icons {
+            width: 30%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            cursor: pointer;
+            
+            a {
+                text-decoration: none;
+                color: white;
+                position: relative;
+    
+                .count {
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                }
+            }
+        }
+    }
+
+    .links {
+        height: 83px;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        span {
+            color: red;
+
+            svg {
+                width: 15px;
+            }
+        }
+        p {
+            cursor: pointer;
+        }
+    }
+
+    .deals {
+        width: 100%;
+        height: 45%;
+        background-color: #403136;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        .texta {
+            color: white;
+            font-size: 13px;
+            width: 18%;
+            text-align: center;
+        }
+
+        .text {
+            color: white;
+            font-size: 13px;
+            width: 22%;
+            text-align: center;
+            border-left: white 1px solid;
+        }
+
+    }
+}
+
+.banners {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 89%;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .drop-downs {
+        img {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+.home-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+
+    .align {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        
+        #coffee-makers {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            
+
+            .product {
+                width: 23%;
+                height: 90vh;
+                border: solid 1px black;
+                box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.53);
+                -webkit-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.53);
+                -moz-box-shadow: 1px 4px 39px -4px rgba(0,0,0,0.53);
+
+                .color {
+                    width: 30px;
+                    height: 30px;
+                    border: 2px solid black;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 25px;
+
+                    .bubble {
+                        width: 20px;
+                        height: 20px;
+                        background-color: black;
+                        border-radius: 50%;
+                    }
+                }
+
+                .info {
+                    width: 100%;
+                    height: 48%;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .top {
+                        width: 89%;
+                        height: 100px;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        border-bottom: .5px solid black;
+                        margin-bottom: 10px;
+                        
+                        
+                        span {
+                            display: block;
+                            padding-top: 20px;
+                            display: flex;
+                            align-items: center;
+                            font-size: 12px;
+                        }
+                        .one {
+                            font-size: 20px;
+                            font-weight: bold;
+                            padding: 18px;
+
+                        }
+                    }
+
+                    .bottom {
+                        width: 89%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        p {
+                            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            span {
+                                padding: 5px;
+                                border-left: 1px solid black;
+                            }
+                        }
+
+                    }
+
+                    .ship {
+                        width: 89%;
+                        align-items: start;
+                        margin-top: 30px;
+                        display: flex;
+                        p {
+                            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            color: #527BFB;
+                            font-size: 12px;
+                        }
+                        .box {
+                            width: 20px;
+                            height: 20px;
+                            border: 1px solid black;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .buy-now {
+                        cursor: pointer;
+                        margin-top: 50px;
+                        padding: 10px 75px;
+                        border: 2px solid #E0BF53;
+
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+                }
+            }
+        
+            img {
+                margin-top: 100px;
+            }
+        
+        }
+    }
+
+    
+}
+
+
